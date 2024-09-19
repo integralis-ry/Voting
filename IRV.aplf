@@ -1,0 +1,31 @@
+∇ res←IRV ballot; votes; table; voters; max; eliminated
+  ⍝ Tally the primary votes per candidate
+  votes←⊃+/ballot[;1]×1=ballot[;2]
+
+  ⍝ Generate tally table to show in results
+  table←↑[1](⍳⍴votes)(votes)
+  res←⊂(table[;2]≠0)⌿table
+
+  ⍝ Tally the number of active voters, i.e. who have at least one vote >0
+  voters←+/ballot[;1]×⊃∨/¨0<ballot[;2]
+
+  max←⌈/votes
+
+  ⍝ Check if we have a winner
+  :If voters≤2×max
+    ⍝ Check if there is a unique winner
+    :If 1=+/votes=max
+      res←res,votes⍳max
+    :EndIf
+    →0
+  :EndIf
+
+  ⍝ Eliminate the elements with the least (or zero) votes
+  eliminated←((votes=0)∨votes=⌊/(0≠votes)/votes)/⍳⍴votes
+
+  ⍝ Repeatedly delete eliminated first preferences
+  ballot[;2]←{0⌈⍵-(⍵⍳¨1)∊,eliminated}⍣≡ballot[;2]
+
+  ⍝ Recurse
+  res←res,IRV ballot
+∇
