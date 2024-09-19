@@ -1,0 +1,3 @@
+[submodule "EWC"]
+	path = EWC
+	url = git@github.com:Dyalog/EWC.git
