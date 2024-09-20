@@ -1,4 +1,7 @@
-∇ res←IRV ballot; votes; table; voters; max; eliminated
+ res←STV ballot;votes;table;voters;max;eliminated
+  ⍝ Perform the Single Transferrable Vote logic
+  ⍝ Currently supports only one winner
+
   ⍝ Tally the primary votes per candidate
   votes←⊃+/ballot[;1]×1=ballot[;2]
 
@@ -27,5 +30,4 @@
   ballot[;2]←{0⌈⍵-(⍵⍳¨1)∊,eliminated}⍣≡ballot[;2]
 
   ⍝ Recurse
-  res←res,IRV ballot
-∇
+  res←res,STV ballot
