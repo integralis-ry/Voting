@@ -1,3 +1,4 @@
 Run
-  EWC.EWC.FOLDER ← '/EWC',⍨⊃2 3⌷⎕SE.Link.Status #
+  ⍙WS ← ⊃2 3⌷⎕SE.Link.Status #
+  EWC.EWC.FOLDER ← ⍙WS,'/EWC'
   EWC.EWC.Init 'Browser'

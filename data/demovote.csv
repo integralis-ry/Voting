@@ -1,0 +1,16 @@
+Id,Start time,Completion time,Email,Name,Vote for president
+1,2/8/2023 11:58,2/8/2023 11:58,anonymous,,Candidate B;Candidate C;Candidate D;Candidate E;Candidate F;
+2,2/8/2023 11:58,2/8/2023 11:58,anonymous,,Candidate B;Candidate C;Candidate D;Candidate F;Candidate E;
+3,2/8/2023 11:58,2/8/2023 11:58,anonymous,,Candidate E;Candidate F;Candidate B;Candidate C;Candidate D;
+4,2/8/2023 11:58,2/8/2023 12:00,anonymous,,Candidate C;Candidate D;Candidate F;Candidate E;Candidate B;
+5,2/8/2023 12:00,2/8/2023 12:00,anonymous,,Candidate B;Candidate C;Candidate D;Candidate E;Candidate F;
+6,2/8/2023 12:00,2/8/2023 12:01,anonymous,,Candidate F;Candidate B;Candidate C;Candidate E;Candidate D;
+7,2/8/2023 12:01,2/8/2023 12:02,anonymous,,Candidate F;Candidate B;Candidate C;Candidate D;Candidate E;
+8,2/8/2023 12:02,2/8/2023 12:02,anonymous,,Candidate B;Candidate F;Candidate C;Candidate D;Candidate E;
+9,2/8/2023 12:02,2/8/2023 12:02,anonymous,,Candidate B;Candidate F;Candidate E;Candidate D;Candidate C;
+10,2/8/2023 12:02,2/8/2023 12:03,anonymous,,Candidate B;Candidate D;Candidate C;Candidate E;Candidate F;
+11,2/8/2023 12:03,2/8/2023 12:03,anonymous,,Candidate C;Candidate B;Candidate D;Candidate E;Candidate F;
+12,2/8/2023 12:03,2/8/2023 12:03,anonymous,,Candidate C;Candidate B;Candidate E;Candidate F;Candidate D;
+13,2/8/2023 12:03,2/8/2023 12:03,anonymous,,Candidate B;Candidate C;Candidate E;Candidate F;Candidate D;
+14,2/8/2023 12:03,2/8/2023 12:04,anonymous,,Candidate E;Candidate D;Candidate F;Candidate C;Candidate B;
+15,2/8/2023 12:06,2/8/2023 12:06,anonymous,,Candidate C;Candidate B;Candidate E;Candidate D;Candidate F;

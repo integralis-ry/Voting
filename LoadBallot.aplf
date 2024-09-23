@@ -1,0 +1,13 @@
+res←LoadBallot(filename titlerow);data;preferences
+  ⍝ Load a CSV file with votes and extract the relevant information
+  ⍝
+  ⍝ Right arguments:
+  ⍝ * filename: a string containing the filename of the ballot CSV.
+  ⍝   this is assumed to be located in the `data` folder of this repository.
+  ⍝ * titlerow: a string containing the name of the header row that has the voting preferences.
+  ⍝
+  ⍝ Returns: A Ballot, similarly to what the Ballot function returns
+
+  data←⎕CSV ⍙WS,'/data/',filename
+  preferences←1↓data⌷[2]⍨data[1;]⍳⊂titlerow
+  ⍝ TBC
